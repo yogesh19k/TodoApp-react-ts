@@ -1,0 +1,37 @@
+.tasks-elements{
+    background-color: #eeeeee;
+    border-radius: 5px;
+    margin: 5px 0px;
+    padding: 10px 10px;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 12px auto 20px 10px;
+    align-items: center;
+}
+
+.tasks-elements--input{
+    accent-color: rgb(1, 157, 63);  
+}
+
+.tasks-elements--input:hover{
+    cursor: pointer;
+}
+
+
+.tasks-elements--Text{
+    margin: 0px 5px;
+    font-size: 10px;
+
+}
+
+
+.tasks-elements--edit{
+    color: #5d9cdb;
+    font-size: 0.9rem;
+}
+
+.tasks-elements--delete{
+    color: #e76174;
+    font-size: 0.70rem;
+}
