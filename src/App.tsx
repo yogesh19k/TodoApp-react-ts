@@ -14,9 +14,11 @@ interface Task {
 export default function App(){
     const [tasks,setTasks] = React.useState<Task[]>([])
     const [editText,setEditText] = React.useState<string>("") 
-    const taskLeft:number = tasks.reduce((sum:any,val:any) => { 
+    const taskLeft:number = tasks.reduce((sum:any,val:Task) => { 
                     if(!val.completed)
                         return sum+1;
+                    else
+                        return sum;
                     },0)
     function createTask(taskName:string){
         if(taskName){
